@@ -1,11 +1,11 @@
 A Python-based application that detects plagiarism in code submissions using classic algorithms like Rabin-Karp for string matching, Graph algorithms (BFS/DFS) for clustering, Greedy techniques for representative selection, and B+ Trees for efficient metadata handling.
 
-Overview
+**Overview**
 This project provides a comprehensive system for automatically detecting plagiarism in programming assignments. It leverages a combination of algorithms to analyze code submissions, identify similarities, and present the findings in an understandable format. The core of the detector is built on fundamentals of algorithm design, demonstrating their practical application.
 
 The system includes a user-friendly web interface built with Streamlit, allowing for interactive analysis, visualization of results, and easy adjustment of detection parameters.
 
-Key Features
+**Key Features**
 Multi-Algorithm Approach: Utilizes a suite of classic algorithms for robust detection:
 Rabin-Karp: For efficient string matching to find similar code sequences.
 Graph Theory (BFS/DFS): For clustering similar submissions into plagiarism groups.
@@ -16,7 +16,7 @@ Block Insensitive Analysis: The parser can tokenize code in a way that is insens
 Interactive Web UI: A Streamlit application provides a graphical interface to upload files, adjust the similarity threshold, and view detailed results through tables, a similarity heatmap, and a network graph.
 Command-Line Interface: The detector can also be run from the command line for batch processing or integration into automated workflows.
 Real-time Processing: The system is designed to incrementally update its similarity graph as new submissions are added, making it suitable for real-time analysis environments.
-How It Works
+**How It Works**
 The plagiarism detection process follows several key steps:
 
 Code Parsing: Each source code file is parsed into a sequence of tokens. Comments are removed, strings are replaced with a placeholder, and variable/function names are normalized (e.g., calculate_sum and compute_total are both treated as VAR_0). This focuses the comparison on the code's underlying structure and logic.
@@ -31,7 +31,7 @@ Representative Selection (Greedy Algorithm): Within each cluster, a greedy algor
 
 Metadata Management (B+ Tree): An optional B+ Tree data structure is used to store and quickly retrieve metadata associated with each submission, such as student IDs and submission timestamps, providing valuable context to the detection results.
 
-Installation
+**Installation**
 Ensure you have Python 3.6 or higher installed.
 
 Clone the repository:
